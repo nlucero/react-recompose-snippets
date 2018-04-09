@@ -1,0 +1,25 @@
+{
+  "React recompose template": {
+    "prefix": "rrec",
+    "description": "React component with recompose + prop-types",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "import { compose, setDisplayName, setPropTypes, pure } from 'recompose';",
+      "",
+      "const propTypes = {",
+      "\t$2",
+      "};",
+      "",
+      "const ${1:Component} = () => $0;",
+      "",
+      "const enhance = compose(",
+      "  setDisplayName('${1:Component}'),",
+      "  setPropTypes(propTypes),",
+      "  pure",
+      ");",
+      "",
+      "export default enhance(${1:Component});"
+    ]
+  }
+}
